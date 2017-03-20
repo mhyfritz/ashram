@@ -1,0 +1,15 @@
+{
+  "name": "ashram",
+  "version": "0.0.1",
+  "description": "Find acronyms of a given phrase",
+  "main": "index.js",
+  "bin": {
+    "ashram": "./cli.js"
+  },
+  "author": "Markus Hsi-Yang Fritz",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "word-list": "^2.0.0"
+  }
+}
