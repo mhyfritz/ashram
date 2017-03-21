@@ -1,6 +1,6 @@
 {
   "name": "ashram",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Find acronyms of a given phrase",
   "main": "index.js",
   "bin": {
@@ -8,6 +8,14 @@
   },
   "author": "Markus Hsi-Yang Fritz",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhyfritz/ashram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhyfritz/ashram/issues"
+  },
+  "homepage": "https://github.com/mhyfritz/ashram",
   "dependencies": {
     "commander": "^2.9.0",
     "word-list": "^2.0.0"
