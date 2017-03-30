@@ -15,13 +15,13 @@ npm install -g ashram
 ## Usage
 
 ```bash
-ashram --phrase 'my super awesome application'
+ashram --phrase 'acronym search program'
 ...
-merman
+aero
 ...
-muesli
+anchor
 ...
-muscat
+ashram
 ...
 ```
 

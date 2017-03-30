@@ -2,6 +2,7 @@
 
 const program = require('commander')
 const pkg = require('./package.json')
+const readline = require('readline')
 const fs = require('fs')
 const isAcronym = require('./')
 
@@ -17,10 +18,13 @@ if (!program.phrase) {
 }
 
 const wordsPath = program.file || require('word-list')
-const words = fs.readFileSync(wordsPath, 'utf8').split('\n')
 
-for (const word of words) {
+const rl = readline.createInterface({
+  input: fs.createReadStream(wordsPath)
+})
+
+rl.on('line', word => {
   if (isAcronym(program.phrase, word)) {
     console.log(word)
   }
-}
+})
