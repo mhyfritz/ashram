@@ -4,7 +4,7 @@ const program = require('commander')
 const pkg = require('./package.json')
 const readline = require('readline')
 const fs = require('fs')
-const isAcronym = require('./')
+const acronym = require('@mhyfritz/acronym')
 
 program
   .version(pkg.version)
@@ -24,7 +24,7 @@ const rl = readline.createInterface({
 })
 
 rl.on('line', word => {
-  if (isAcronym(program.phrase, word)) {
+  if (acronym.test(program.phrase, word)) {
     console.log(word)
   }
 })

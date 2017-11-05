@@ -1,8 +1,7 @@
 {
   "name": "ashram",
-  "version": "0.2.1",
-  "description": "Find acronyms of a given phrase",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "acronym search program",
   "bin": {
     "ashram": "./cli.js"
   },
@@ -17,7 +16,8 @@
   },
   "homepage": "https://github.com/mhyfritz/ashram",
   "dependencies": {
-    "commander": "^2.9.0",
+    "@mhyfritz/acronym": "^0.3.0",
+    "commander": "^2.11.0",
     "word-list": "^2.0.0"
   }
 }
